@@ -35,6 +35,7 @@
     .downloads{display:flex;flex-direction:column;gap:12px}.download{display:flex;justify-content:space-between;align-items:center;gap:20px;background:#fff;padding:19px 22px;border:1px solid #e2d8cc;border-radius:10px;color:var(--ink);text-decoration:none;transition:transform .15s}.download:hover{transform:translateY(-2px);border-color:var(--goldDeep)}.download strong{display:block}.download small{color:var(--muted)}
     .note{font-size:13px!important;color:#6d665b!important;margin-top:14px}.send{background:#fff;padding-top:82px;padding-bottom:82px}.send .send-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px}.send h2{max-width:500px}
     .send ul{padding-left:21px;color:#42514c;line-height:1.95}.send .aside{background:#f7f5f0;padding:31px;border-radius:14px;border:1px solid var(--line)}
+    .contact-options{display:grid;gap:12px;margin:26px 0 10px}.contact-option{display:block;background:#fff;border:1px solid var(--line);border-radius:12px;padding:19px 22px;text-decoration:none;transition:border-color .2s ease,transform .2s ease}.contact-option:hover{border-color:var(--goldDeep);transform:translateY(-2px)}.contact-option strong{display:block;font-size:16px;overflow-wrap:anywhere}.contact-option small{display:block;margin-bottom:7px;color:var(--goldDeep);font-weight:800;letter-spacing:.09em;text-transform:uppercase}.contact-option span{display:block;font-size:13px;color:var(--muted);margin-top:5px}
     footer{background:#111c19;color:#cdd7d1;padding:34px 0}.foot{display:flex;gap:20px;justify-content:space-between;align-items:center;font-size:13px}footer strong{color:#fff;letter-spacing:.09em}
     @media(max-width:780px){.wrap{width:min(100% - 34px,1160px)}.nav{height:auto;min-height:70px;flex-wrap:wrap;padding:15px 0}.links{gap:16px;flex-wrap:wrap}.links a{font-size:12px}.hero{min-height:610px;background-position:61% 50%;background-image:linear-gradient(90deg,rgba(12,21,18,.9) 0%,rgba(12,21,18,.72) 70%,rgba(12,21,18,.45) 100%),url("hero.webp")}.hero .wrap{padding:60px 0}.hero p{font-size:16px}.steps,.statement .split,.start .box,.send .send-grid{grid-template-columns:1fr}.step{min-height:auto}.topics{grid-template-columns:1fr 1fr}.statement .split,.send .send-grid{gap:25px}.start .box{padding:33px 25px;gap:22px}section{padding:66px 0}}
     @media(max-width:490px){.topics{grid-template-columns:1fr}.links a:nth-child(1){display:none}.nav .links{gap:13px}.hero h1{font-size:44px}.download{padding:16px}.foot{align-items:flex-start;flex-direction:column}.button{width:100%}.actions{flex-direction:column}}
@@ -45,7 +46,7 @@
   <a class="skip" href="#main">Skip to content</a>
   <div class="nav-bg"><nav class="nav wrap" aria-label="Main navigation">
     <a class="brand" href="#top">OCCASIONAL<span> VIDEO</span></a>
-    <div class="links"><a href="#how">How it works</a><a href="#about">What we create</a><a href="#start">Get started</a></div>
+    <div class="links"><a href="#how">How it works</a><a href="#about">What we create</a><a href="#start">Get started</a><a href="#send">Contact</a></div>
   </nav></div>
   <main id="main">
   <header class="hero" id="top"><div class="wrap">
@@ -76,10 +77,19 @@
     </div>
   </div></div></section>
   <section class="send" id="send"><div class="wrap send-grid">
-    <div><div class="smallHead">One last step</div><h2>Send us the details. We'll take it from there.</h2><p class="intro">Once you're finished, return the questionnaire and send the original images and videos using the contact method you already have for us.</p></div>
-    <div class="aside"><strong>Media checklist</strong><ul><li>Approximately 30-50 original photos</li><li>3-10 short video clips, if available</li><li>A few clear portraits, candid photos and important milestones</li><li>Names or filenames for any must-use memories</li></ul><p class="note">WhatsApp and email are fine for our family test. Send large files as documents or originals when possible to preserve quality. Contact details will be added before public launch.</p></div>
+    <div>
+      <div class="smallHead">We're here to help</div>
+      <h2>Send us your story. We'll take it from there.</h2>
+      <p class="intro">Finished the questionnaire? Email it to us with any photos or short clips you'd like to share. For large media collections, email us first and we'll arrange the best way to transfer the originals.</p>
+      <div class="contact-options" aria-label="Contact emails">
+        <a class="contact-option" href="mailto:info@occasionalvideo.com?subject=Occasional%20Video%20-%20New%20Project%20Inquiry"><small>New projects &amp; completed questionnaires</small><strong>info@occasionalvideo.com</strong><span>Send your creative brief or ask about starting a video. ↗</span></a>
+        <a class="contact-option" href="mailto:support@occasionalvideo.com?subject=Occasional%20Video%20-%20Order%20Support"><small>Existing projects &amp; questions</small><strong>support@occasionalvideo.com</strong><span>Questions about an existing project or its media. ↗</span></a>
+      </div>
+      <p class="note">These links open your email app. Prefer WhatsApp? Ask us by email and we'll coordinate a convenient way to share files.</p>
+    </div>
+    <div class="aside"><strong>Media checklist</strong><ul><li>Approximately 30-50 original photos</li><li>3-10 short video clips, if available</li><li>A few clear portraits, candid photos and important milestones</li><li>Names or filenames for any must-use memories</li></ul><p class="note">For the best video quality, send original files rather than screenshots. If the files are too large for email, contact us before sending.</p></div>
   </div></section>
   </main>
-  <footer><div class="wrap foot"><strong>OCCASIONAL VIDEO</strong><span>Made for the people and moments that matter.</span><span>Family preview · © <span id="year">2026</span></span></div></footer>
+  <footer><div class="wrap foot"><strong>OCCASIONAL VIDEO</strong><span>Made for the people and moments that matter.</span><a href="mailto:info@occasionalvideo.com">info@occasionalvideo.com</a><span>Family preview · © <span id="year">2026</span></span></div></footer>
   <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
 </body></html>
